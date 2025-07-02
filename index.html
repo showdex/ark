@@ -128,5 +128,13 @@
       <p>&copy; 2025 ARK. All rights reserved.</p>
     </footer>
   </div>
+  <script>
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('newsletter-email').value;
+    alert('Thanks for subscribing, ' + email + '!');
+    // Simulate sending to backend here
+  });
+  </script>
 </body>
 </html>
